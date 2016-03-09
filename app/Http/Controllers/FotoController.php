@@ -61,7 +61,7 @@ class FotoController extends Controller
             ]
         );
         
-        return redirect('/validado/albumes')->with('creada', 'La foto ha sido subida');
+        return redirect("/validado/fotos?id={{$id}}")->with('creada', 'La foto ha sido subida');
     }
 
     public function getActualizarFoto()
